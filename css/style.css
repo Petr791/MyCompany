@@ -45,7 +45,7 @@ header {
     font-weight: 800;
     font-size: 24px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 28px;
     margin-left: 12%;
 }
 
@@ -75,6 +75,12 @@ nav {
 
 .icon {
     display: none;
+    /*  display: inline-block; */
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 main {
@@ -430,20 +436,32 @@ footer {
 @media screen and (max-width: 1070px) {
     .header {
         height: auto;
+        position: relative;
     }
     .topnav a {
         display: none;
     }
-    .topnav a.icon {
+    /*     .topnav a.icon {
         float: right;
         margin-top: -17px;
         margin-right: 40px;
         display: block;
         color: #fff;
         font-size: 25px;
+    } */
+    .icon {
+        /* float: left; */
+        position: absolute;
+        /*  margin-top: 16px;
+        margin-right: 10px; */
+        top: 16px;
+        right: 10px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
     }
     nav {
-        width: 100%;
+        width: 30%;
     }
     .topnav.responsive {
         position: relative;
@@ -464,6 +482,7 @@ footer {
         text-align: left;
     }
     .main-welcome {
+        border-top: 1px solid #000;
         padding: 50px 0px 50px 0px;
     }
     main .main-welcome h1 {
@@ -551,21 +570,28 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .topnav a {
+        margin-bottom: 0px;
+    }
     .topnav a.icon {
         margin-right: 0;
-        margin-left: 10%;
+        /* margin-left: 10%; */
+        margin-left: 0;
         float: left;
+        margin-top: 0px;
     }
-    .topnav.responsive a.icon {
+    /*    .topnav.responsive a.icon {
         position: relative;
         right: -200px;
         top: -386px;
         margin-bottom: 0px;
-    }
+    } */
     .topnav.responsive {
         position: relative;
         top: 50px;
         right: 200px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
     .form-inputs p {
         margin-left: 20px;
