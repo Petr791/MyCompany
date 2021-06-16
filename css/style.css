@@ -449,19 +449,19 @@ footer {
         color: #fff;
         font-size: 25px;
     } */
-    .icon {
+    a.icon {
         /* float: left; */
         position: absolute;
         /*  margin-top: 16px;
         margin-right: 10px; */
         top: 16px;
         right: 10px;
-        display: block;
+        display: inline-block;
         color: #fff;
         font-size: 25px;
     }
     nav {
-        width: 30%;
+        width: 100%;
     }
     .topnav.responsive {
         position: relative;
@@ -471,11 +471,11 @@ footer {
     header .topnav.responsive {
         height: 390px;
     }
-    .topnav.responsive a.icon {
+    /*  .topnav.responsive a.icon {
         position: absolute;
         top: -50px;
         right: -200px;
-    }
+    } */
     .topnav.responsive a {
         float: none;
         display: block;
